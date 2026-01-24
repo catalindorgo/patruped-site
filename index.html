@@ -3,20 +3,14 @@
 <head>
 <title>Program de Sociointegrare Canină</title>
 <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
 
 <style>
+/* ====== FONTURI ====== */
 body { font-family: Georgia, serif; }
-
-h1, h2 {
-  font-family: 'Trebuchet MS', sans-serif;
-}
-
-h3 {
-  font-weight: 800;
-  letter-spacing: 0.08em;
-}
+h1, h2 { font-family: 'Trebuchet MS', sans-serif; }
+h3 { font-weight: 800; letter-spacing: 0.08em; }
 
 /* ====== SECTIUNI ====== */
 section.main {
@@ -30,35 +24,53 @@ section.main {
   display: grid;
   grid-template-columns: 1fr 420px;
   gap: 3em;
+  align-items: center;
 }
 
 /* ====== IMAGINI ====== */
 .section-image {
   width: 100%;
-  height: 100%;
   border-radius: 18px;
   object-fit: cover;
 }
 
 /* ====== CONTACT IMAGE ====== */
 .contact-image {
-  height: 50%;
+  max-height: 260px;
   width: auto;
 }
 
 /* ====== CONTACT COMPACT ====== */
 #contact {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-#contact .section-layout {
-  align-items: center;
-  margin-top: 1.5em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
 }
 
 #contact .major {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
+}
+
+/* ====== CONTACT CARD ====== */
+.contact-card {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.contact-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  margin-top: 0.6em;
+  font-weight: bold;
+}
+
+.contact-phone a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-phone a:hover {
+  text-decoration: underline;
 }
 
 /* ====== PAW TRACKS ====== */
@@ -71,7 +83,6 @@ section.main {
 }
 
 .paw-track span {
-  display: inline-block;
   margin: 0 4px;
 }
 
@@ -81,28 +92,11 @@ section.main {
     grid-template-columns: 1fr;
   }
 
-  .section-image {
-    max-height: 400px;
-    width: 100%;
-  }
-
   .contact-image {
-    height: auto;
+    max-height: 320px;
     width: 100%;
   }
 }
-  /* === CONTACT FIX FINAL === */
-#contact .major {
-  margin-bottom: 1.5em;
-}
-
-#contact .section-layout {
-  align-items: center;
-  margin-top: 0;
-}
-
-
-
 </style>
 </head>
 
@@ -131,7 +125,7 @@ section.main {
 
 <!-- ====== MISIUNE ====== -->
 <section id="misiune" class="main">
-  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span><span>🐾🐾</span></div>
+  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span></div>
   <header class="major"><h2>Misiunea Programului</h2></header>
 
   <div class="section-layout">
@@ -172,21 +166,11 @@ section.main {
   <div class="section-layout">
     <div>
       <ol>
-        <li><strong>Etapa I – Evaluare și triere</strong><br/>
-          Examinare veterinară, evaluare comportamentală și fișă individuală.
-        </li>
-        <li><strong>Etapa II – Reabilitare comportamentală</strong><br/>
-          Dresaj de bază, socializare și terapie prin joacă.
-        </li>
-        <li><strong>Etapa III – Pregătire pentru adopție</strong><br/>
-          Adaptare la mediul de apartament și promovare pentru adopție.
-        </li>
-        <li><strong>Etapa IV – Educarea comunității</strong><br/>
-          Campanii educaționale, zile deschise și workshop-uri.
-        </li>
-        <li><strong>Etapa V – Adopție și monitorizare</strong><br/>
-          Contract, perioadă de probă și monitorizare post-adopție.
-        </li>
+        <li><strong>Evaluare și triere</strong> – examinare veterinară și evaluare comportamentală.</li>
+        <li><strong>Reabilitare comportamentală</strong> – dresaj, socializare și joacă.</li>
+        <li><strong>Pregătire pentru adopție</strong> – adaptare și promovare.</li>
+        <li><strong>Educarea comunității</strong> – campanii și workshop-uri.</li>
+        <li><strong>Adopție și monitorizare</strong> – contract și urmărire post-adopție.</li>
       </ol>
     </div>
 
@@ -196,49 +180,38 @@ section.main {
 
 <!-- ====== IMPLEMENTARE ====== -->
 <section id="implementare" class="main">
-  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span><span>🐾🐾</span></div>
+  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span></div>
   <header class="major"><h2>Implementare</h2></header>
 
   <div class="section-layout">
     <div>
       <h3>Resurse</h3>
-      <ul>
-        <li>Medic veterinar</li>
-        <li>Dresor</li>
-        <li>Voluntari</li>
-      </ul>
+      <ul><li>Medic veterinar</li><li>Dresor</li><li>Voluntari</li></ul>
 
       <h3>Indicatori</h3>
-      <ul>
-        <li>Creșterea adopțiilor</li>
-        <li>Reducerea agresivității</li>
-        <li>Implicare comunitară</li>
-      </ul>
+      <ul><li>Creșterea adopțiilor</li><li>Reducerea agresivității</li><li>Implicare comunitară</li></ul>
 
       <h3>Beneficii</h3>
-      <ul>
-        <li>Câini echilibrați</li>
-        <li>Comunitate mai sigură</li>
-        <li>Responsabilitate socială</li>
-      </ul>
+      <ul><li>Câini echilibrați</li><li>Comunitate mai sigură</li><li>Responsabilitate socială</li></ul>
     </div>
 
     <img src="images/implementare.jpg" class="section-image" />
   </div>
 </section>
 
-<!-- ====== CONTACT ====== -->
+<!-- ====== CONTACT (FINAL FIX) ====== -->
 <section id="contact" class="main">
   <header class="major"><h2>Contact</h2></header>
 
   <div class="section-layout">
     <img src="images/contact.jpg" class="section-image contact-image" />
 
-    <div>
-      <p>
-        <strong>Coordonator:</strong> Titus Pal<br/>
-        <strong>Telefon:</strong> <a href="tel:0754888320">0754 888 320</a>
-      </p>
+    <div class="contact-card">
+      <p><strong>Coordonator:</strong> Titus Pal</p>
+
+      <div class="contact-phone">
+        📞 <a href="tel:0754888320">0754 888 320</a>
+      </div>
     </div>
   </div>
 </section>
