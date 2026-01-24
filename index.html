@@ -5,176 +5,236 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="assets/css/main.css" />
+
 <style>
 body { font-family: Georgia, serif; }
-h1, h2 { font-family: 'Trebuchet MS', sans-serif; }
-h3 { font-weight: 800; letter-spacing: 0.08em; }
 
+h1, h2 {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+h3 {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* ====== SECTIUNI ====== */
 section.main {
-    border-top: 3px solid rgba(0,0,0,0.08);
-    padding: 4em 0;
-    position: relative;
+  border-top: 3px solid rgba(0,0,0,0.08);
+  padding: 4em 0;
+  position: relative;
 }
 
+/* ====== LAYOUT TEXT + IMAGINE ====== */
 .section-layout {
-    display: grid;
-    grid-template-columns: 1fr 420px;
-    gap: 3em;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 3em;
 }
 
+/* ====== IMAGINI ====== */
 .section-image {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  object-fit: cover;
 }
 
-.paw-track {
-    position: absolute;
-    top: 20%;
-    left: 45%;
-    font-size: 1.8rem;
-    opacity: 0.15;
-}
-
-.paw-track span {
-    display: inline-block;
-    margin: 0 4px;
-}
-
-@media (max-width: 900px) {
-    .section-layout {
-        grid-template-columns: 1fr;
-    }
-    .section-image {
-        max-height: 400px;
-    }
-}
+/* ====== CONTACT IMAGE ====== */
 .contact-image {
   height: 50%;
   width: auto;
-  align-self: center;
 }
+
+/* ====== CONTACT COMPACT ====== */
+#contact {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
 #contact .section-layout {
   align-items: center;
+  margin-top: 1.5em;
 }
 
+#contact .major {
+  margin-bottom: 1.5em;
+}
 
+/* ====== PAW TRACKS ====== */
+.paw-track {
+  position: absolute;
+  top: 18%;
+  left: 45%;
+  font-size: 1.8rem;
+  opacity: 0.15;
+}
+
+.paw-track span {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+/* ====== MOBILE ====== */
+@media (max-width: 900px) {
+  .section-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .section-image {
+    max-height: 400px;
+    width: 100%;
+  }
+
+  .contact-image {
+    height: auto;
+    width: 100%;
+  }
+}
 </style>
 </head>
+
 <body class="is-preload">
 
 <div id="wrapper">
 
 <header id="header" class="alt">
-<span class="logo"><img src="images/logo.jpg" style="max-width:260px;" /></span>
-<h1>Program de Sociointegrare Canină</h1>
-<p>Asociația Patruped – reintegrarea câinilor din adăpost în comunitate</p>
+  <span class="logo">
+    <img src="images/logo.jpg" style="max-width:260px;" />
+  </span>
+  <h1>Program de Sociointegrare Canină</h1>
+  <p>Asociația Patruped – reintegrarea câinilor din adăpost în comunitate</p>
 </header>
 
 <nav id="nav">
-<ul>
-<li><a href="#misiune" class="active">Misiune</a></li>
-<li><a href="#etape">Etape</a></li>
-<li><a href="#implementare">Implementare</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
+  <ul>
+    <li><a href="#misiune" class="active">Misiune</a></li>
+    <li><a href="#etape">Etape</a></li>
+    <li><a href="#implementare">Implementare</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <div id="main">
 
+<!-- ====== MISIUNE ====== -->
 <section id="misiune" class="main">
-<div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span><span>🐾🐾</span></div>
-<header class="major"><h2>Misiunea Programului</h2></header>
-<div class="section-layout">
-<div>
-<p>Misiunea Programului de Sociointegrare Canină este de a reda câinilor din adăpost șansa la o viață echilibrată și sigură în comunitate.</p>
-<h3>Obiective</h3>
-<ul>
-<li>Reabilitare comportamentală</li>
-<li>Creșterea șanselor de adopție</li>
-<li>Reducerea abandonului</li>
-</ul>
-<h3>Grup țintă</h3>
-<ul>
-<li>Câini din adăpost</li>
-<li>Adoptatori</li>
-<li>Voluntari</li>
-<li>Comunitatea locală</li>
-</ul>
-<h3>Durata</h3>
-<p>Program permanent, organizat în cicluri de <strong>3–6 luni</strong>.</p>
-</div>
-<img src="images/misiune.jpg" class="section-image"/>
-</div>
-</section>
+  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span><span>🐾🐾</span></div>
+  <header class="major"><h2>Misiunea Programului</h2></header>
 
-<section id="etape" class="main">
-<div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span></div>
-<header class="major"><h2>Etapele Programului</h2></header>
-<div class="section-layout">
-<div>
+  <div class="section-layout">
+    <div>
+      <p>
+        Misiunea Programului de Sociointegrare Canină este de a reda câinilor din adăpost
+        șansa la o viață echilibrată și sigură în comunitate.
+      </p>
 
-<ol>
-  <li><strong>Etapa I – Evaluare și triere</strong><br/>
-    <span style="opacity:0.9;">Examinare veterinară, evaluare comportamentală și întocmirea fișei individuale pentru fiecare câine.</span>
-  </li>
-  <li><strong>Etapa II – Reabilitare comportamentală</strong><br/>
-    <span style="opacity:0.9;">Dresaj de bază, socializare și terapie prin joacă, adaptate nivelului și nevoilor fiecărui câine.</span>
-  </li>
-  <li><strong>Etapa III – Pregătire pentru adopție</strong><br/>
-    <span style="opacity:0.9;">Obișnuirea cu mediul de apartament, rutine zilnice și promovarea câinilor pentru adopție responsabilă.</span>
-  </li>
-  <li><strong>Etapa IV – Educarea comunității</strong><br/>
-    <span style="opacity:0.9;">Campanii în școli, zile deschise și workshop-uri pentru creșterea responsabilității și a informării publicului.</span>
-  </li>
-  <li><strong>Etapa V – Adopție și monitorizare</strong><br/>
-    <span style="opacity:0.9;">Contract de adopție, perioadă de probă și monitorizare post-adopție pentru a asigura integrarea pe termen lung.</span>
-  </li>
-</ol>
+      <h3>Obiective</h3>
+      <ul>
+        <li>Reabilitare comportamentală</li>
+        <li>Creșterea șanselor de adopție</li>
+        <li>Reducerea abandonului</li>
+      </ul>
 
-</div>
-<img src="images/etape.jpg" class="section-image"/>
-</div>
-</section>
+      <h3>Grup țintă</h3>
+      <ul>
+        <li>Câini din adăpost</li>
+        <li>Adoptatori</li>
+        <li>Voluntari</li>
+        <li>Comunitatea locală</li>
+      </ul>
 
-<section id="implementare" class="main">
-<div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span><span>🐾🐾</span></div>
-<header class="major"><h2>Implementare</h2></header>
-<div class="section-layout">
+      <h3>Durata</h3>
+      <p>Program permanent, organizat în cicluri de <strong>3–6 luni</strong>.</p>
+    </div>
 
-<div>
-<h3>Resurse</h3>
-<ul><li>Medic veterinar</li><li>Dresor</li><li>Voluntari</li></ul>
-<h3>Indicatori</h3>
-<ul><li>Creșterea adopțiilor</li><li>Reducerea agresivității</li><li>Implicare comunitară</li></ul>
-<h3>Beneficii</h3>
-<ul><li>Câini echilibrați</li><li>Comunitate mai sigură</li><li>Responsabilitate socială</li></ul>
-</div>
-
-<img src="images/implementare.jpg" class="section-image"/>
-</div>
-</section>
-
-<section id="contact" class="main special">
-<header class="major"><h2>Contact</h2></header>
-<div class="section-layout">
-  <img src="images/contact.jpg" class="section-image contact-image" />
-
-  <div>
-    <p>
-      <strong>Coordonator:</strong> Titus Pal<br />
-      <strong>Telefon:</strong> 0754 888 320
-    </p>
+    <img src="images/misiune.jpg" class="section-image" />
   </div>
-</div>
+</section>
+
+<!-- ====== ETAPE ====== -->
+<section id="etape" class="main">
+  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span></div>
+  <header class="major"><h2>Etapele Programului</h2></header>
+
+  <div class="section-layout">
+    <div>
+      <ol>
+        <li><strong>Etapa I – Evaluare și triere</strong><br/>
+          Examinare veterinară, evaluare comportamentală și fișă individuală.
+        </li>
+        <li><strong>Etapa II – Reabilitare comportamentală</strong><br/>
+          Dresaj de bază, socializare și terapie prin joacă.
+        </li>
+        <li><strong>Etapa III – Pregătire pentru adopție</strong><br/>
+          Adaptare la mediul de apartament și promovare pentru adopție.
+        </li>
+        <li><strong>Etapa IV – Educarea comunității</strong><br/>
+          Campanii educaționale, zile deschise și workshop-uri.
+        </li>
+        <li><strong>Etapa V – Adopție și monitorizare</strong><br/>
+          Contract, perioadă de probă și monitorizare post-adopție.
+        </li>
+      </ol>
+    </div>
+
+    <img src="images/etape.jpg" class="section-image" />
+  </div>
+</section>
+
+<!-- ====== IMPLEMENTARE ====== -->
+<section id="implementare" class="main">
+  <div class="paw-track"><span>🐾🐾</span><span>🐾🐾</span><span>🐾🐾</span></div>
+  <header class="major"><h2>Implementare</h2></header>
+
+  <div class="section-layout">
+    <div>
+      <h3>Resurse</h3>
+      <ul>
+        <li>Medic veterinar</li>
+        <li>Dresor</li>
+        <li>Voluntari</li>
+      </ul>
+
+      <h3>Indicatori</h3>
+      <ul>
+        <li>Creșterea adopțiilor</li>
+        <li>Reducerea agresivității</li>
+        <li>Implicare comunitară</li>
+      </ul>
+
+      <h3>Beneficii</h3>
+      <ul>
+        <li>Câini echilibrați</li>
+        <li>Comunitate mai sigură</li>
+        <li>Responsabilitate socială</li>
+      </ul>
+    </div>
+
+    <img src="images/implementare.jpg" class="section-image" />
+  </div>
+</section>
+
+<!-- ====== CONTACT ====== -->
+<section id="contact" class="main special">
+  <header class="major"><h2>Contact</h2></header>
+
+  <div class="section-layout">
+    <img src="images/contact.jpg" class="section-image contact-image" />
+
+    <div>
+      <p>
+        <strong>Coordonator:</strong> Titus Pal<br/>
+        <strong>Telefon:</strong> <a href="tel:0754888320">0754 888 320</a>
+      </p>
+    </div>
+  </div>
 </section>
 
 </div>
 
 <footer id="footer">
-<p>&copy; Asociația Patruped</p>
+  <p>&copy; Asociația Patruped</p>
 </footer>
 
 </div>
